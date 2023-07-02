@@ -2,6 +2,8 @@ import styled from '@emotion/styled';
 
 export const Header = styled.header`
 // display:flex;
+// text-aling:center;
+// aling-items:center;
 `
 
 export const Container = styled.div`

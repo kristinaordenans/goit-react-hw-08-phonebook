@@ -13,7 +13,8 @@ justify-content: center;
 width: 85px;
 padding:3px;
 padding-bottom:5px;
-font-size:20px;
+font-size:16px;
+font-weight:bold;
 `;
 
 export const Container = styled.div`

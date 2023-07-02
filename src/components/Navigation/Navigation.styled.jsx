@@ -11,7 +11,13 @@ color: rgb(245, 127, 49);
 // justify-content: center;
 // width: 100px;
 // padding:3px;
-font-size:26px;
+font-size:20px;
 font-weight:bold;
+
 `;
+
+export const NavContainer = styled.div`
+display: flex;
+gap: 10px;
+`
 
