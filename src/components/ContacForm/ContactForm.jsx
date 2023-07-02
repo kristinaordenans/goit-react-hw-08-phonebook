@@ -29,20 +29,21 @@ export const ContactForm = () => {
     }
   };
 
-  const handlrAddToContactList = (e) => {
-        const includesName = contacts.find(contact => contact.name === name);
-        const includesNumber = contacts.find(contact => contact.number === number);
-        e.preventDefault();
 
-        if(includesName) {
-            alert(`'${name}'is alredy in contacts`)
-        } else if(includesNumber) {
-            alert(`'${number}'is alredy in contacts`)
-        } else {
-            dispatch(addContact({ name, number }));
-          setName('');
-          setPhone('');
-        }
+  const handlrAddToContactList = (e) => {
+    e.preventDefault();
+      const isIncludeContactNumber = contacts?.find(
+      contact => contact.number === number
+    );
+
+    if (isIncludeContactNumber) {
+      alert(`'${number}'is alredy in contacts`)
+    } else {
+      const contact = { name, number };
+      dispatch(addContact(contact));
+      setName('');
+      setPhone('');
+    }
   }
 
   return (

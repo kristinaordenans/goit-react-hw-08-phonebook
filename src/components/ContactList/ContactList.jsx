@@ -14,7 +14,7 @@ export const ContactList = () => {
     return (
     <div>
         <ContactListContainer>
-           {filteredContacts && filteredContacts.map(({ name, number, id })=>{
+           {filteredContacts?.map(({ name, number, id })=>{
                return (
                    <ContactItem key={id}
                         id={id}

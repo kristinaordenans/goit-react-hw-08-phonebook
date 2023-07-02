@@ -1,7 +1,7 @@
-import { persisteReducer } from './contacts/contactSlice';
+import { persisteReducerContacts } from './contacts/contactSlice';
 import { persisteReducerAuth } from './auth/authSlice';
 
 export const reducer = {
-  contacts: persisteReducer,
+  contacts: persisteReducerContacts,
   auth: persisteReducerAuth
 };
