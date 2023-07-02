@@ -1,15 +1,15 @@
 import { useSelector } from 'react-redux';
 import { selectIsLoggedIn } from 'redux/auth/selector';
-// import { Container } from 'components/App.styled';
+import { Container, Title, Par } from './HomePage.styled';
 
 export default function Home() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
-    <div>
-        <h1>Welcome to Phonebook</h1>
+    <Container>
+        <Title>Welcome to Phonebook!</Title>
         {!isLoggedIn && (
-          <p>Please log in to use the Phonebook</p>
+          <Par>Please log in to use the Phonebook!</Par>
         )}
-    </div>
+    </Container>
   );
 }
