@@ -1,7 +1,5 @@
 import { Link, Container } from './AuthNav.styled';
 
-// import { NavLink } from "react-router-dom";
-
 export const AuthNav = () => {
   return (
     <Container>
