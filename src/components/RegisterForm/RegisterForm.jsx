@@ -53,7 +53,6 @@ export const RegisterForm = () => {
                  onChange={handleChange}
             name="name"
                       placeholder="Type your name..."
-
                  />
               </Label>
             <Label>
