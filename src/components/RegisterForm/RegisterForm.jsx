@@ -51,7 +51,9 @@ export const RegisterForm = () => {
               <Input type="text"
                  value={name}
                  onChange={handleChange}
-                 name="name"
+            name="name"
+                      placeholder="Type your name..."
+
                  />
               </Label>
             <Label>
@@ -59,7 +61,8 @@ export const RegisterForm = () => {
               <Input type="email"
                  value={email}
                  onChange={handleChange}
-                 name="email"
+            name="email"
+          placeholder="Type your email..."
                   />
             </Label>
             <Label>
@@ -67,7 +70,8 @@ export const RegisterForm = () => {
               <Input type="password"
                  value={password}
                  onChange={handleChange}
-                 name="password"
+            name="password"
+          placeholder="Type your password..."
                   />
               </Label>
             <Button type="submit">Register</Button>
